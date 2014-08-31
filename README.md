@@ -1,4 +1,4 @@
-# GiHubStar Ranking
+# GitHubStar Ranking
 
 ===================================
 
