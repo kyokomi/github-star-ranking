@@ -6,7 +6,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-    <link href="./css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
@@ -120,7 +120,7 @@
                 <td><a href="{{.HtmlURL}}">{{.FullName}}</a></td>
                 <td>{{.StargazersCount}}</td>
 
-                <td>{{if .LastStargazersCount}}{{.}}{{else}}---{{end}}</td>
+                <td>{{with .LastStargazersCount}}{{.}}{{else}}---{{end}}</td>
                 <td>{{.FormatTime .UpdatedAt}}</td>
                 <td>{{.FormatTime .CreatedAt}}</td>
             </tr>
